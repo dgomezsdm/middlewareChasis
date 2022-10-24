@@ -18,9 +18,9 @@ console.log(tipo,documento);
   let data = response.data;
 
   console.log(data);
- res.send('Saludos desde express');
- res.json(data);
-  return data;
+//  res.send('Saludos desde express');
+ res.send({data:data});
+  // return data;
   } catch (error) {
 
   }
