@@ -1,9 +1,10 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const chassisRoute = require('./routes/azure');
 
 const app = express();
-
+const PORT = process.env.PORT || 3001
 app.use(cors());
 
 
@@ -18,4 +19,4 @@ app.use('/chassis',chassisRoute)
 //   console.log('hola');
 //   res.json(["hol","Asdsad"]);
 // })
-app.listen(3000, () => console.log('Seerve up'));
+app.listen(PORT, () => console.log(`Server up on ${process.env.PORT}`));
