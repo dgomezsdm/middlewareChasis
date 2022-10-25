@@ -34,8 +34,13 @@ const getChassis2 = async (req,res,next) => {
 
 // console.log(tipo,documento);
   try {
-    let response = await axios.get(
-        `http://vsrvintegration:8087/api/WorkshopReception/WorkShopList`
+    // let response = await axios.get(
+    //     `http://vsrvintegration:8087/api/WorkshopReception/WorkShopList`
+    //   );
+
+
+         let response = await axios.get(
+        `https://sdm-qa-sapapi.azurewebsites.net/api/Workshop/zv02`
       );
 
   let data = response.data;

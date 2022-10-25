@@ -19,5 +19,5 @@ app.use('/chassis',chassisRoute)
 //   console.log('hola');
 //   res.json(["hol","Asdsad"]);
 // })
-app.listen(PORT, () => console.log(`Server up on2 ${process.env.PORT}`));
-app.timeout = 900000;
+app.listen(PORT, () => console.log(`Server up on ${process.env.PORT}`));
+
