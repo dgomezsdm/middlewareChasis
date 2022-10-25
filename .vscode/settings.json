@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/f695db22-d3cb-4f88-b540-adc2a014b200/AppServices/subscriptions/f695db22-d3cb-4f88-b540-adc2a014b200/resourceGroups/CMS-dev-RG/providers/Microsoft.Web/sites/nodeMidleware",
+  "appService.deploySubpath": "."
+}
