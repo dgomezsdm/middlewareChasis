@@ -35,7 +35,7 @@ const getChassis2 = async (req,res,next) => {
 // console.log(tipo,documento);
   try {
     let response = await axios.get(
-        `https://sdm-qa-sapapi.azurewebsites.net/api/TypeOfDocuments`
+        `http://vsrvintegration:8087/api/WorkshopReception/WorkShopList`
       );
 
   let data = response.data;
