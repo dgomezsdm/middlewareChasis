@@ -28,4 +28,28 @@ console.log(tipo,documento);
 
 }
 
-module.exports = {getChassis}
+const getChassis2 = async (req,res,next) => {
+// const tipo = req.query.tipo;
+// const documento = req.query.documento;
+
+// console.log(tipo,documento);
+  try {
+    let response = await axios.get(
+        `https://sdm-qa-sapapi.azurewebsites.net/api/TypeOfDocuments`
+      );
+
+  let data = response.data;
+
+  console.log(data);
+//  res.send('Saludos desde express');
+ res.send({data:data});
+  // return data;
+  } catch (error) {
+
+  }
+
+
+}
+
+
+module.exports = {getChassis,getChassis2}
