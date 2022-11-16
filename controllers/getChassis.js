@@ -22,7 +22,8 @@ console.log(tipo,documento);
  res.send({data:data});
   // return data;
   } catch (error) {
-
+    console.log(error,'error');
+     res.send({error:error});
   }
 
 
